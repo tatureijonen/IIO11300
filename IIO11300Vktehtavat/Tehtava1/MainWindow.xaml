@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Tehtava1"
         mc:Ignorable="d"
-        Title="Oy K-S Windows Ab" Height="400" Width="800" FontSize="18">
+        Title="Oy K-S Windows Ab" Height="418.49" Width="800" FontSize="18">
     <Grid>
         <StackPanel HorizontalAlignment="Left" Height="159" Margin="407,0,0,0" VerticalAlignment="Top" Width="187">
             <Label x:Name="label" Content="Ikkunan leveys (L)" HorizontalAlignment="Left" Height="52" Width="187"/>
@@ -18,7 +18,8 @@
             <TextBox x:Name="textBox_Width" HorizontalAlignment="Left" Height="33" TextWrapping="Wrap" Text="45" VerticalAlignment="Top" Width="193" Margin="4"/>
         </StackPanel>
         <StackPanel HorizontalAlignment="Left" Height="62" Margin="407,159,0,0" VerticalAlignment="Top" Width="385">
-            <Button x:Name="button" Content="Laske pinta-ala ja piiri" Height="62" Click="OnClick"/>
+            <Button x:Name="button" Content="Laske pinta-ala ja piiri" Height="27" Click="OnClick"/>
+            <Button x:Name="button1" Content="Oliolaskin" Click="btnCalculateArea"/>
         </StackPanel>
         <StackPanel HorizontalAlignment="Left" Height="149" Margin="407,221,0,0" VerticalAlignment="Top" Width="187">
             <Label x:Name="label_Copy" Content="Ikkunan pinta-ala" HorizontalAlignment="Left" Height="52" Width="187"/>
@@ -30,11 +31,9 @@
             <TextBox x:Name="textBox_Perimeter" HorizontalAlignment="Left" Height="33" TextWrapping="Wrap" Text="tulos2&#xD;&#xA;" VerticalAlignment="Top" Width="193" Margin="4,4,-4,4"/>
             <TextBox x:Name="textBox_PerimeterArea" HorizontalAlignment="Left" Height="33" TextWrapping="Wrap" Text="tulos3&#xD;&#xA;" VerticalAlignment="Top" Width="193" Margin="4,4,-4,4"/>
         </StackPanel>
-        <StackPanel HorizontalAlignment="Left" Height="370" VerticalAlignment="Top" Width="407">
-            <Canvas HorizontalAlignment="Left" Height="312" Margin="20,20,20,20" Width="355" Background="BurlyWood">
-                <Canvas HorizontalAlignment="Left" Height="280" Width="320" Background="LightBlue" Canvas.Left="16" Canvas.Top="16">
-                    
-                </Canvas>
+        <StackPanel HorizontalAlignment="Left" Height="348" VerticalAlignment="Top" Width="407">
+            <Canvas HorizontalAlignment="Left" Height="312" Margin="20,20,0,20" Width="355" Background="BurlyWood">
+                <Canvas HorizontalAlignment="Left" Height="280" Width="320" Background="LightBlue" Canvas.Left="16" Canvas.Top="16"/>
             </Canvas>
         </StackPanel>
     </Grid>

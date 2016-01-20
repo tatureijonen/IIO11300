@@ -57,40 +57,70 @@ namespace Tehtava1
 
         private void OnClick(object sender, RoutedEventArgs e)
         {
-           /*try
+            /*try
+             {
+                 double result;
+                 result = BusinessLogicWindow.CalculatePerimeter(1, 1);
+
+             }
+             catch (Exception ex)
+             {
+                 MessageBox.Show(ex.Message);
+             }
+             finally
+             {
+                 //yield to an user that everything okay
+
+             }*/
+
+            try
             {
-                double result;
-                result = BusinessLogicWindow.CalculatePerimeter(1, 1);
-                
+                double length = double.Parse(textBox_Length.Text);
+                double height = double.Parse(textBox_Height.Text);
+                /* textBox_Area.Text = (length * height).ToString(); */
+                double area1 = length * height;
+                textBox_Area.Text = area1.ToString();
+                double extrawidth = double.Parse(textBox_Width.Text) * 2;
+                length = length - extrawidth;
+                height = height - extrawidth;
+                double area2 = length * height;
+                area2 = area1 - area2;
+                textBox_PerimeterArea.Text = area2.ToString();
+                length = length * 2;
+                height = height * 2;
+                textBox_Perimeter.Text = (length + height).ToString();
             }
             catch (Exception ex)
             {
+
                 MessageBox.Show(ex.Message);
             }
-            finally
+
+
+
+
+        }
+
+        private void btnCalculateArea(object sender, RoutedEventArgs e)
+        {
+            try
             {
-                //yield to an user that everything okay
-                
-            }*/
+                //Lasketaan pinta-ala ikkunan olion avulla
+                //Luodaan luokasta olio
+                JAMK.IT.IIO11300.Ikkuna ikk = new JAMK.IT.IIO11300.Ikkuna();
+                ikk.Korkeus = double.Parse(textBox_Height.Text);
+                ikk.Leveys = double.Parse(textBox_Length.Text);
+                //tulos käyttäjälle
+                //VE metodilla
+                //MessageBox.Show(ikk.LaskePintaAla().ToString());
+                //VE property
+                MessageBox.Show(ikk.PintaAla.ToString());
+            }
+            catch (Exception ex)
+            {
 
-            double length = double.Parse(textBox_Length.Text);
-            double height = double.Parse(textBox_Height.Text);
-            /* textBox_Area.Text = (length * height).ToString(); */
-            double area1 = length * height;
-            textBox_Area.Text = area1.ToString();
-            double extrawidth = double.Parse(textBox_Width.Text)*2;
-            length = length - extrawidth;
-            height = height - extrawidth;
-            double area2 = length * height;
-            area2 = area1 - area2;
-            textBox_PerimeterArea.Text = area2.ToString();
-            length = length * 2;
-            height = height * 2;
-            textBox_Perimeter.Text = (length + height).ToString();
-
-
-
-
+                MessageBox.Show(ex.Message);
+            }
         }
     }
 
