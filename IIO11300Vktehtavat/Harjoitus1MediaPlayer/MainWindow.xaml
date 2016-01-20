@@ -7,8 +7,10 @@
         mc:Ignorable="d"
         Title="My Fine Media Player" Height="350" Width="525">
     <Grid>
-        <Button x:Name="btnPlay" Content="Soita rockia" HorizontalAlignment="Left" Margin="58,36,0,0" VerticalAlignment="Top" Width="75" Click="btnPlay_Click"/>
+        <Button x:Name="btnPlay" Content="Soita rockia" HorizontalAlignment="Left" Margin="61,36,0,0" VerticalAlignment="Top" Width="75" Click="btnPlay_Click"/>
         <MediaElement x:Name="mediaElement" HorizontalAlignment="Left" Height="170" Margin="87,117,0,0" VerticalAlignment="Top" Width="334" LoadedBehavior="Manual"/>
+        <Button x:Name="Pause" Content="Pauseta" HorizontalAlignment="Left" Margin="172,36,0,0" VerticalAlignment="Top" Width="75" Click="btnPause"/>
+        <Button x:Name="Stop" Content="Stop" HorizontalAlignment="Left" Margin="286,36,0,0" VerticalAlignment="Top" Width="75"/>
 
     </Grid>
 </Window>
