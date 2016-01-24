@@ -18,39 +18,32 @@ namespace Tehtava2
     /// <summary>
     /// Interaction logic for MainWindow.xaml
     /// </summary>
+    /// 
+
     public partial class MainWindow : Window
     {
+        
 
         public MainWindow()
         {
             InitializeComponent();
+           
         }
+
 
         private void onClick(object sender, RoutedEventArgs e)
         {
 
-            int[] arr1 = new int[6];
-            Random random = new Random();
-            for (int i = 0; i < 7; i++)
+            Tehtava2.Lotto lotto = new Lotto();
+            int numbers = int.Parse(textBox_number.Text);
+
+            for(int i = 0; i < numbers; i++)
             {
-                int randomNumber = random.Next(1,40);
-
-                arr1[i] = randomNumber;
-            }
-
-            string lottonumbers = ConvertIntArrayToString(arr1);
-            textBox_number.Text = lottonumbers;
-
+                listBox.Items.Add(lotto.DrawLottoNumbers());
+            }           
         }
 
-        static string ConvertIntArrayToString(int[] array)
-        {
-            //
-            // Use string Join to concatenate the string elements.
-            //
-            string result = string.Join(" ", array);
-            return result;
-        }
+       
 
     }
 }
