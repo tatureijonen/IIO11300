@@ -31,19 +31,35 @@ namespace Tehtava2
         }
 
 
-        private void onClick(object sender, RoutedEventArgs e)
+        private void drawClick(object sender, RoutedEventArgs e)
         {
 
             Tehtava2.Lotto lotto = new Lotto();
-            int numbers = int.Parse(textBox_number.Text);
 
-            for(int i = 0; i < numbers; i++)
+            try
             {
-                listBox.Items.Add(lotto.DrawLottoNumbers());
-            }           
+                lotto.Times = int.Parse(textBox_number.Text);
+            }
+
+            catch
+            {
+                MessageBox.Show("Invalid input in Number of drawns textbox");
+            }
+            
+            if(comboBox.SelectedIndex == 0) { listBox.Items.Add(lotto.DrawLottoNumbers()); }
+            if(comboBox.SelectedIndex == 1) { listBox.Items.Add(lotto.DrawVikingNumbers()); }
+            if (comboBox.SelectedIndex == 2) { listBox.Items.Add(lotto.DrawEuroNumbers()); }
+
         }
 
-       
+        private void clearClick(object sender, RoutedEventArgs e)
+        {
+            listBox.Items.Clear();
+        }
 
+        private void exitClick(object sender, RoutedEventArgs e)
+        {
+            System.Environment.Exit(1);
+        }
     }
 }
