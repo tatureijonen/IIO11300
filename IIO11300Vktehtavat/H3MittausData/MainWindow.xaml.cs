@@ -13,6 +13,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 using JAMK.IT.IIO11300;
+using Microsoft.Win32;
 
 namespace H3MittausData
 {
@@ -39,6 +40,29 @@ namespace H3MittausData
             MittausData md = new MittausData(txtClock.Text, txtData.Text);
             lbData.Items.Add(md);
 
+        }
+
+        private void btnBrowse_Click(object sender, RoutedEventArgs e)
+        {
+            OpenFileDialog dlg = new OpenFileDialog();
+            dlg.InitialDirectory = txtFileName.Text;
+            dlg.Filter = "Text Files (*.txt)|*.txt|Dat Files(*.dat)|*.dat|All files(*.*)|*.*";
+            Nullable<bool> result = dlg.ShowDialog();
+            if (result == true)
+            {
+                txtFileName.Text = dlg.FileName;
+            }
+        }
+
+        private void btnSerialisoi_Click(object sender, RoutedEventArgs e)
+        {
+            try {
+                JAMK.ICT.IO.Serialisointi.Serialisoi(txtFileName.Text, ); //MITÄ HELVETTIÄ TÄNNE TULEE?
+            }
+            catch
+            {
+                MessageBox.Show("No can do");
+            }
         }
     }
 }

@@ -5,17 +5,21 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:H3MittausData"
         mc:Ignorable="d"
-        Title="MainWindow" Height="350" Width="525">
-    <Grid>
-        <TabControl x:Name="tabControl" HorizontalAlignment="Left" Height="300" Margin="14,9,0,0" VerticalAlignment="Top" Width="488" >
+        Title="MainWindow" Height="350" Width="566.353">
+    <Grid Margin="0,0,-8,0">
+        <TabControl x:Name="tabControl" HorizontalAlignment="Left" Height="300" Margin="14,9,0,0" VerticalAlignment="Top" Width="511" >
             <TabItem Header="Data Input">
-                <Grid Background="#FFE5E5E5">
+                <Grid Background="#FFE5E5E5" Margin="0,4,-2,-4">
                     <StackPanel Orientation="Vertical">
                         <StackPanel Orientation="Horizontal">
                             <TextBlock Text="Tänään on:"/>
                             <TextBlock x:Name="txtToday"/>
                             <TextBlock Text="Tiedostonimi:" Margin="10,0,0,0"/>
                             <TextBox x:Name="txtFileName" Text="d:\temp\testi.txt"/>
+                            <Button x:Name="btnBrowse" Content="Browse" Margin="5,0,5,0" Click="btnBrowse_Click"/>
+                            <Button x:Name="btnShow" Content="Show" Margin="0,0,5,0"/>
+                            <Button x:Name="btnSerialisoi" Content="Serialisoi" Margin="0,0,5,0" Click="btnSerialisoi_Click"/>
+                            <Button x:Name="btnDeserialisoi" Content="Deserialisoi" Margin="0,0,5,0"/>
 
                         </StackPanel>
                         <StackPanel Orientation="Horizontal">
