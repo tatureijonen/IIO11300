@@ -8,7 +8,7 @@ using System.Runtime.Serialization.Formatters.Binary;
 using System.Xml.Serialization;
 
 
-namespace JAMK.ICT.IO
+namespace JAMK.IT.IIO11300
 {
     public class Serialisointi
     {
@@ -92,4 +92,6 @@ namespace JAMK.ICT.IO
         }
         #endregion
     }
+    
 }
+
