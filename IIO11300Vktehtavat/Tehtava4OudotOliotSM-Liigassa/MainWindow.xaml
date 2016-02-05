@@ -1,0 +1,42 @@
+﻿<Window x:Class="Tehtava4OudotOliotSM_Liigassa.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Tehtava4OudotOliotSM_Liigassa"
+        mc:Ignorable="d"
+        Title="Oudot Oliot SM-Liigassa" Height="350" Width="691.667">
+    <Grid Margin="0,0,2,0">
+        <StackPanel HorizontalAlignment="Left" Height="200" Margin="10,10,0,0" VerticalAlignment="Top" Width="100">
+            <Label Height="40" FontSize="20" HorizontalAlignment="Center" Content="Etunimi"/>
+            <Label Height="40" FontSize="20" HorizontalAlignment="Center" Content="Sukunimi"/>
+            <Label Height="40" FontSize="20" HorizontalAlignment="Center" Content="Siirtohinta"/>
+            <Label Height="40" FontSize="20" HorizontalAlignment="Center" Content="Seura"/>
+        </StackPanel>
+        <StackPanel HorizontalAlignment="Left" Height="200" Margin="420,10,0,0" VerticalAlignment="Top" Width="250">
+            <ListBox x:Name="listBox" Height="200"/>
+        </StackPanel>
+        <StackPanel HorizontalAlignment="Left" Height="200" Margin="120,10,0,0" VerticalAlignment="Top" Width="170">
+            <TextBox x:Name="txtBoxNimi" Height="40" FontSize="18" Text=""/>
+            <TextBox x:Name="txtBoxSukunimi" Height="40" FontSize="18" Text=""/>
+            <TextBox x:Name="txtBoxHinta" Height="40" FontSize="18" Text=""/>
+            <ComboBox x:Name="comboBoxSeura" Height="40">
+                <ComboBoxItem x:Name="JYP" FontSize="20" VerticalAlignment="Center" Height="40">JYP</ComboBoxItem>
+                <ComboBoxItem x:Name="Tappara" FontSize="20" VerticalAlignment="Center" Height="40">Tappara</ComboBoxItem>
+                <ComboBoxItem x:Name="Pelicans" FontSize="20" VerticalAlignment="Center" Height="40">Pelicans</ComboBoxItem>
+                <ComboBoxItem x:Name="HIFK" FontSize="20" VerticalAlignment="Center" Height="40">HIFK</ComboBoxItem>
+            </ComboBox>
+
+        </StackPanel>
+        <StackPanel HorizontalAlignment="Left" Height="200" Margin="300,10,0,0" VerticalAlignment="Top" Width="110">
+            <Button x:Name="buttonLuoPelaaja" Content="Luo pelaaja" Height="40"/>
+            <Button x:Name="buttonTalletaPelaaja" Content="Talleta pelaaja" Height="40"/>
+            <Button x:Name="buttonPoistaPelaaja" Content="Poista pelaaja" Height="40"/>
+            <Button x:Name="buttonKirjoitaPelaajat" Content="Kirjoita pelaajat" Height="40"/>
+            <Button x:Name="buttonLopetus" Content="Poista pelaaja" Height="40"/>
+        </StackPanel>
+        <StackPanel HorizontalAlignment="Left" Height="100" Margin="10,215,0,0" VerticalAlignment="Top" Width="660"/>
+        <StatusBar HorizontalAlignment="Left" Height="100" Margin="10,215,0,0" VerticalAlignment="Top" Width="662"/>
+
+    </Grid>
+</Window>
