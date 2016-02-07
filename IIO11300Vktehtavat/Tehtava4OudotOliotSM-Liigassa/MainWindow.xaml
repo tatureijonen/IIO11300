@@ -17,19 +17,30 @@
             <ListBox x:Name="listBox" Height="200"/>
         </StackPanel>
         <StackPanel HorizontalAlignment="Left" Height="200" Margin="120,10,0,0" VerticalAlignment="Top" Width="170">
-            <TextBox x:Name="txtBoxNimi" Height="40" FontSize="18" Text=""/>
+            <TextBox x:Name="txtBoxEtunimi" Height="40" FontSize="18" Text=""/>
             <TextBox x:Name="txtBoxSukunimi" Height="40" FontSize="18" Text=""/>
             <TextBox x:Name="txtBoxHinta" Height="40" FontSize="18" Text=""/>
-            <ComboBox x:Name="comboBoxSeura" Height="40">
+            <ComboBox x:Name="comboBoxSeura" FontSize="20"  Height="40">
                 <ComboBoxItem x:Name="JYP" FontSize="20" VerticalAlignment="Center" Height="40">JYP</ComboBoxItem>
                 <ComboBoxItem x:Name="Tappara" FontSize="20" VerticalAlignment="Center" Height="40">Tappara</ComboBoxItem>
                 <ComboBoxItem x:Name="Pelicans" FontSize="20" VerticalAlignment="Center" Height="40">Pelicans</ComboBoxItem>
+                <ComboBoxItem x:Name="Blues" FontSize="20" VerticalAlignment="Center" Height="40">Blues</ComboBoxItem>
+                <ComboBoxItem x:Name="HPK" FontSize="20" VerticalAlignment="Center" Height="40">HPK</ComboBoxItem>
+                <ComboBoxItem x:Name="Ilves" FontSize="20" VerticalAlignment="Center" Height="40">Ilves</ComboBoxItem>
+                <ComboBoxItem x:Name="Kalpa" FontSize="20" VerticalAlignment="Center" Height="40">Kalpa</ComboBoxItem>
+                <ComboBoxItem x:Name="Kookoo" FontSize="20" VerticalAlignment="Center" Height="40">KooKoo</ComboBoxItem>
+                <ComboBoxItem x:Name="Kärpät" FontSize="20" VerticalAlignment="Center" Height="40">Kärpät</ComboBoxItem>
+                <ComboBoxItem x:Name="Lukko" FontSize="20" VerticalAlignment="Center" Height="40">Lukko</ComboBoxItem>
+                <ComboBoxItem x:Name="Sport" FontSize="20" VerticalAlignment="Center" Height="40">Sport</ComboBoxItem>
+                <ComboBoxItem x:Name="TPS" FontSize="20" VerticalAlignment="Center" Height="40">TPS</ComboBoxItem>
+                <ComboBoxItem x:Name="Ässät" FontSize="20" VerticalAlignment="Center" Height="40">Ässät</ComboBoxItem>
+                <ComboBoxItem x:Name="Saipa" FontSize="20" VerticalAlignment="Center" Height="40">Saipa</ComboBoxItem>
                 <ComboBoxItem x:Name="HIFK" FontSize="20" VerticalAlignment="Center" Height="40">HIFK</ComboBoxItem>
             </ComboBox>
 
         </StackPanel>
         <StackPanel HorizontalAlignment="Left" Height="200" Margin="300,10,0,0" VerticalAlignment="Top" Width="110">
-            <Button x:Name="buttonLuoPelaaja" Content="Luo pelaaja" Height="40"/>
+            <Button x:Name="buttonLuoPelaaja" Content="Luo pelaaja" Height="40" Click="buttonLuoPelaaja_Click"/>
             <Button x:Name="buttonTalletaPelaaja" Content="Talleta pelaaja" Height="40"/>
             <Button x:Name="buttonPoistaPelaaja" Content="Poista pelaaja" Height="40"/>
             <Button x:Name="buttonKirjoitaPelaajat" Content="Kirjoita pelaajat" Height="40"/>
