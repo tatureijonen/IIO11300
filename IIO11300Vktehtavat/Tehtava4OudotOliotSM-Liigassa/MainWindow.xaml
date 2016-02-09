@@ -14,7 +14,7 @@
             <Label Height="40" FontSize="20" HorizontalAlignment="Center" Content="Seura"/>
         </StackPanel>
         <StackPanel HorizontalAlignment="Left" Height="200" Margin="420,10,0,0" VerticalAlignment="Top" Width="250">
-            <ListBox x:Name="listBox" Height="200"/>
+            <ListBox x:Name="listBoxNimi" Height="200" SelectionChanged="list_SelectionChanged"/>
         </StackPanel>
         <StackPanel HorizontalAlignment="Left" Height="200" Margin="120,10,0,0" VerticalAlignment="Top" Width="170">
             <TextBox x:Name="txtBoxEtunimi" Height="40" FontSize="18" Text=""/>
@@ -47,7 +47,11 @@
             <Button x:Name="buttonLopetus" Content="Poista pelaaja" Height="40"/>
         </StackPanel>
         <StackPanel HorizontalAlignment="Left" Height="100" Margin="10,215,0,0" VerticalAlignment="Top" Width="660"/>
-        <StatusBar HorizontalAlignment="Left" Height="100" Margin="10,215,0,0" VerticalAlignment="Top" Width="662"/>
+        <StatusBar HorizontalAlignment="Left" Height="100" Margin="10,215,0,0" VerticalAlignment="Top" Width="662">
+            <StatusBarItem>
+                <TextBlock x:Name="statusBar" Text="" FontSize="15"/>
+            </StatusBarItem>
+        </StatusBar>
 
     </Grid>
 </Window>
