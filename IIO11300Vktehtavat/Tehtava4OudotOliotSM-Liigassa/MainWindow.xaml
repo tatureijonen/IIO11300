@@ -41,10 +41,10 @@
         </StackPanel>
         <StackPanel HorizontalAlignment="Left" Height="200" Margin="300,10,0,0" VerticalAlignment="Top" Width="110">
             <Button x:Name="buttonLuoPelaaja" Content="Luo pelaaja" Height="40" Click="buttonLuoPelaaja_Click"/>
-            <Button x:Name="buttonTalletaPelaaja" Content="Talleta pelaaja" Height="40"/>
-            <Button x:Name="buttonPoistaPelaaja" Content="Poista pelaaja" Height="40"/>
+            <Button x:Name="buttonTalletaPelaaja" Content="Talleta pelaaja" Height="40" Click="buttonTalletaPelaaja_Click"/>
+            <Button x:Name="buttonPoistaPelaaja" Content="Poista pelaaja" Height="40" Click="buttonPoistaPelaaja_Click"/>
             <Button x:Name="buttonKirjoitaPelaajat" Content="Kirjoita pelaajat" Height="40"/>
-            <Button x:Name="buttonLopetus" Content="Poista pelaaja" Height="40"/>
+            <Button x:Name="buttonLopetus" Content="Poista pelaaja" Height="40" Click="buttonLopetus_Click"/>
         </StackPanel>
         <StackPanel HorizontalAlignment="Left" Height="100" Margin="10,215,0,0" VerticalAlignment="Top" Width="660"/>
         <StatusBar HorizontalAlignment="Left" Height="100" Margin="10,215,0,0" VerticalAlignment="Top" Width="662">

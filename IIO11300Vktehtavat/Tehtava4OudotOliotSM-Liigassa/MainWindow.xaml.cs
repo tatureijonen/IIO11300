@@ -33,6 +33,7 @@ namespace Tehtava4OudotOliotSM_Liigassa
         public void InitializeMyStuff()
         {
             pelaajat = new List<Liiga>();
+            
         }
 
         private void buttonLuoPelaaja_Click(object sender, RoutedEventArgs e)
@@ -92,22 +93,67 @@ namespace Tehtava4OudotOliotSM_Liigassa
             }
         }
 
-        private void list_SelectionChanged (object sender, SelectionChangedEventArgs e)
+        private void list_SelectionChanged (object sender, SelectionChangedEventArgs e) //LisBoxissa olevan nimen klikkaus
         {
             if (listBoxNimi.SelectedValue == null) return;
 
-            var pelaaja = pelaajat.FirstOrDefault<Liiga>(p => p.EsitysNimi == listBoxNimi.SelectedValue.ToString());
+            var pelaajavalinta = pelaajat.FirstOrDefault<Liiga>(p => p.EsitysNimi == listBoxNimi.SelectedValue.ToString());
 
-            if (pelaaja != null)
+            if (pelaajavalinta != null)
             {
-                txtBoxEtunimi.Text = pelaaja.Etunimi;
-                txtBoxSukunimi.Text = pelaaja.Sukunimi;
-                txtBoxHinta.Text = pelaaja.Siirtohinta;
-                comboBoxSeura.SelectedValue = pelaaja.Seura;
+                txtBoxEtunimi.Text = pelaajavalinta.Etunimi;
+                txtBoxSukunimi.Text = pelaajavalinta.Sukunimi;
+                txtBoxHinta.Text = pelaajavalinta.Siirtohinta;
+                comboBoxSeura.Text = pelaajavalinta.Seura;
                 
             }
         }
 
-       
+        private void buttonTalletaPelaaja_Click(object sender, RoutedEventArgs e) // Pelaajan muokkaaminen
+        {
+            if (listBoxNimi.SelectedValue == null) return;
+
+            var pelaajavalinta = pelaajat.FirstOrDefault<Liiga>(p => p.EsitysNimi == listBoxNimi.SelectedValue.ToString());
+
+            if (pelaajavalinta != null)
+            {
+                pelaajavalinta.Etunimi = txtBoxEtunimi.Text;
+                pelaajavalinta.Sukunimi = txtBoxSukunimi.Text;
+                pelaajavalinta.Siirtohinta = txtBoxHinta.Text;
+                pelaajavalinta.Seura = comboBoxSeura.Text;
+                updatePelaajat();
+                statusBar.Text = "Pelaajatiedot muutettu onnistuneesti!";
+
+            }
+        }
+
+        private void updatePelaajat() // lisboxin päivittäminen
+        {
+            listBoxNimi.Items.Clear();
+
+            foreach (var pelaaja in pelaajat)
+            {
+                listBoxNimi.Items.Add(pelaaja.EsitysNimi);
+            }
+        }
+
+        private void buttonPoistaPelaaja_Click(object sender, RoutedEventArgs e) //pelaajan poistaminen
+        {
+            if (listBoxNimi.SelectedValue == null) return;
+
+            var pelaajavalinta = pelaajat.FirstOrDefault<Liiga>(p => p.EsitysNimi == listBoxNimi.SelectedValue.ToString());
+
+            if(pelaajavalinta != null)
+            {
+                pelaajat.Remove(pelaajavalinta);
+                updatePelaajat();
+            }
+            
+        }
+
+        private void buttonLopetus_Click(object sender, RoutedEventArgs e) // ohjelman sammuttaminen
+        {
+            Application.Current.Shutdown();
+        }
     }
 }
