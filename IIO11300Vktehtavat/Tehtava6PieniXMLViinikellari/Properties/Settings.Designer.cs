@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Tehtava4OudotOliotSM_Liigassa.Properties {
+namespace Tehtava6PieniXMLViinikellari.Properties {
     
     
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
@@ -25,7 +25,7 @@ namespace Tehtava4OudotOliotSM_Liigassa.Properties {
         
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        [global::System.Configuration.DefaultSettingValueAttribute("D:\\\\Viinit1.xml")]
         public string XMLTiedosto {
             get {
                 return ((string)(this["XMLTiedosto"]));
