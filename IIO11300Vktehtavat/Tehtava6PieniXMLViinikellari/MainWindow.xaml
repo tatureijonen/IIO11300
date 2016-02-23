@@ -9,9 +9,8 @@
     <StackPanel Margin="10,10,10,10">
         <StackPanel Height="50" Orientation="Horizontal">
             <Button x:Name="btnHaeViinit" Content="Hae Viinit" FontSize="16" Margin="5,5,5,5" Width="150" Click="btnHaeViinit_Click"/>
-            <ComboBox x:Name="comboBoxMaa" FontSize="16" Width="150" Margin="5,5,5,5">
+            <ComboBox x:Name="comboBoxMaa" FontSize="16" Width="150" Margin="5,5,5,5" Loaded="ComboBox_Loaded"/>
 
-            </ComboBox>
         </StackPanel>
         <StackPanel Height="200">
             <ScrollViewer MaxHeight="200">
