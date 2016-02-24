@@ -1,0 +1,14 @@
+D:\H8510\Repos\IIO11300\IIO11300Vktehtavat\H4WPFXML\bin\Debug\H4WPFXML.exe.config
+D:\H8510\Repos\IIO11300\IIO11300Vktehtavat\H4WPFXML\bin\Debug\H4WPFXML.exe
+D:\H8510\Repos\IIO11300\IIO11300Vktehtavat\H4WPFXML\bin\Debug\H4WPFXML.pdb
+D:\H8510\Repos\IIO11300\IIO11300Vktehtavat\H4WPFXML\obj\Debug\H4WPFXML.csprojResolveAssemblyReference.cache
+D:\H8510\Repos\IIO11300\IIO11300Vktehtavat\H4WPFXML\obj\Debug\MainWindow.g.cs
+D:\H8510\Repos\IIO11300\IIO11300Vktehtavat\H4WPFXML\obj\Debug\App.g.cs
+D:\H8510\Repos\IIO11300\IIO11300Vktehtavat\H4WPFXML\obj\Debug\H4WPFXML_MarkupCompile.cache
+D:\H8510\Repos\IIO11300\IIO11300Vktehtavat\H4WPFXML\obj\Debug\H4WPFXML_MarkupCompile.lref
+D:\H8510\Repos\IIO11300\IIO11300Vktehtavat\H4WPFXML\obj\Debug\MainWindow.baml
+D:\H8510\Repos\IIO11300\IIO11300Vktehtavat\H4WPFXML\obj\Debug\H4WPFXML.g.resources
+D:\H8510\Repos\IIO11300\IIO11300Vktehtavat\H4WPFXML\obj\Debug\H4WPFXML.Properties.Resources.resources
+D:\H8510\Repos\IIO11300\IIO11300Vktehtavat\H4WPFXML\obj\Debug\H4WPFXML.csproj.GenerateResource.Cache
+D:\H8510\Repos\IIO11300\IIO11300Vktehtavat\H4WPFXML\obj\Debug\H4WPFXML.exe
+D:\H8510\Repos\IIO11300\IIO11300Vktehtavat\H4WPFXML\obj\Debug\H4WPFXML.pdb

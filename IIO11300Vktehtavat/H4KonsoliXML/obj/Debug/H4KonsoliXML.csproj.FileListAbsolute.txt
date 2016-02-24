@@ -1,0 +1,6 @@
+D:\H8510\Repos\IIO11300\IIO11300Vktehtavat\H4KonsoliXML\bin\Debug\H4KonsoliXML.exe.config
+D:\H8510\Repos\IIO11300\IIO11300Vktehtavat\H4KonsoliXML\bin\Debug\H4KonsoliXML.exe
+D:\H8510\Repos\IIO11300\IIO11300Vktehtavat\H4KonsoliXML\bin\Debug\H4KonsoliXML.pdb
+D:\H8510\Repos\IIO11300\IIO11300Vktehtavat\H4KonsoliXML\obj\Debug\H4KonsoliXML.csprojResolveAssemblyReference.cache
+D:\H8510\Repos\IIO11300\IIO11300Vktehtavat\H4KonsoliXML\obj\Debug\H4KonsoliXML.exe
+D:\H8510\Repos\IIO11300\IIO11300Vktehtavat\H4KonsoliXML\obj\Debug\H4KonsoliXML.pdb
