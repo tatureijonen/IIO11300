@@ -14,6 +14,7 @@ using System.Windows.Navigation;
 using System.Windows.Shapes;
 using JAMK.IT.IIO11300;
 using Microsoft.Win32;
+using System.Xml.Linq;
 
 namespace Tehtava4OudotOliotSM_Liigassa
 {
@@ -24,6 +25,7 @@ namespace Tehtava4OudotOliotSM_Liigassa
     public partial class MainWindow : Window
     {
         List<Liiga> pelaajat;
+        
         public MainWindow()
         {
             InitializeComponent();
@@ -33,6 +35,8 @@ namespace Tehtava4OudotOliotSM_Liigassa
         public void InitializeMyStuff()
         {
             pelaajat = new List<Liiga>();
+            string filu = GetFileName();
+            
             
         }
 
@@ -154,6 +158,11 @@ namespace Tehtava4OudotOliotSM_Liigassa
         private void buttonLopetus_Click(object sender, RoutedEventArgs e) // ohjelman sammuttaminen
         {
             Application.Current.Shutdown();
+        }
+
+        private string GetFileName()
+        {
+            return Tehtava4OudotOliotSM_Liigassa.Properties.Settings.Default.XMLTiedosto;
         }
     }
 }

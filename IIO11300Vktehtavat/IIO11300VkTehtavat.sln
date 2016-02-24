@@ -19,6 +19,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "H4WPFXML", "H4WPFXML\H4WPFX
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "H5MoviesXML", "H5MoviesXML\H5MoviesXML.csproj", "{CCF7B369-0452-4F0A-8AF0-BC5ACC429A09}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tehtava6PieniXMLViinikellari", "Tehtava6PieniXMLViinikellari\Tehtava6PieniXMLViinikellari.csproj", "{BE31F736-C1EC-485E-A326-0E0C0671E05E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -57,6 +59,10 @@ Global
 		{CCF7B369-0452-4F0A-8AF0-BC5ACC429A09}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CCF7B369-0452-4F0A-8AF0-BC5ACC429A09}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CCF7B369-0452-4F0A-8AF0-BC5ACC429A09}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BE31F736-C1EC-485E-A326-0E0C0671E05E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BE31F736-C1EC-485E-A326-0E0C0671E05E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BE31F736-C1EC-485E-A326-0E0C0671E05E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BE31F736-C1EC-485E-A326-0E0C0671E05E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
