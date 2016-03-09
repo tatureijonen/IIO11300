@@ -25,6 +25,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "H6DataBinding", "H6\H6DataB
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tehtava7Salasana", "Tehtava7Salasana\Tehtava7Salasana.csproj", "{5A0CD066-89AC-407C-8888-5B7004AD68D3}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "H7ADOConsoleDemo", "H7ADOConsoleDemo\H7ADOConsoleDemo.csproj", "{73A72A3E-899F-4475-9897-B4FCB37DF4C4}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -75,6 +77,10 @@ Global
 		{5A0CD066-89AC-407C-8888-5B7004AD68D3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5A0CD066-89AC-407C-8888-5B7004AD68D3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5A0CD066-89AC-407C-8888-5B7004AD68D3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{73A72A3E-899F-4475-9897-B4FCB37DF4C4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{73A72A3E-899F-4475-9897-B4FCB37DF4C4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{73A72A3E-899F-4475-9897-B4FCB37DF4C4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{73A72A3E-899F-4475-9897-B4FCB37DF4C4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
