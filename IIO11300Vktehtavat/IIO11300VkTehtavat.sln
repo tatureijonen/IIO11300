@@ -27,6 +27,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tehtava7Salasana", "Tehtava
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "H7ADOConsoleDemo", "H7ADOConsoleDemo\H7ADOConsoleDemo.csproj", "{73A72A3E-899F-4475-9897-B4FCB37DF4C4}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tehtava8ViiniasiakkaatFrom8", "Tehtava8ViiniasiakkaatFrom8\Tehtava8ViiniasiakkaatFrom8.csproj", "{8F484228-BD1E-422B-9245-208394598CEA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -81,6 +83,10 @@ Global
 		{73A72A3E-899F-4475-9897-B4FCB37DF4C4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{73A72A3E-899F-4475-9897-B4FCB37DF4C4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{73A72A3E-899F-4475-9897-B4FCB37DF4C4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8F484228-BD1E-422B-9245-208394598CEA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8F484228-BD1E-422B-9245-208394598CEA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8F484228-BD1E-422B-9245-208394598CEA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8F484228-BD1E-422B-9245-208394598CEA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

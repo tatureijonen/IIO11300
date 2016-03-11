@@ -1,0 +1,28 @@
+﻿<Window x:Class="Tehtava8ViiniasiakkaatFrom8.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Tehtava8ViiniasiakkaatFrom8"
+        mc:Ignorable="d"
+        Title="ViiniAsiakkaat" Height="350" Width="525">
+    <Grid>
+        <StackPanel Orientation="Horizontal">
+            <StackPanel Width="200"> <!--vasempi puoli-->
+                <Button x:Name="btnHaeAsiakkaat" Content="Hae asiakkaat" Click="btnHaeAsiakkaat_Click" />
+                <DataGrid x:Name="dgData" />
+            </StackPanel>
+            <StackPanel Width="200">
+                <!--oikea puoli-->
+                <TextBlock Text="Etunimi:" FontSize="16"/>
+                <TextBox />
+                <TextBlock Text="Sukunimi:" FontSize="16"/>
+                <TextBox />
+                <TextBlock Text="Osoite:" FontSize="16"/>
+                <TextBox />
+                <TextBlock Text="Kaupunki:" FontSize="16"/>
+                <TextBox />
+            </StackPanel>
+        </StackPanel>
+    </Grid>
+</Window>
