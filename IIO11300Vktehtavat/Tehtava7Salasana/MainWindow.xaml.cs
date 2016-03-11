@@ -19,6 +19,7 @@ namespace Tehtava7SalasananVahvuudenTarkistaja
     /// <summary>
     /// Interaction logic for MainWindow.xaml
     /// </summary>
+    /// //Testikommentti
     public partial class MainWindow : Window
     {
         string salasana;
